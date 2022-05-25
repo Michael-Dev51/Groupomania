@@ -1,9 +1,10 @@
-/*const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  transpileDependencies: true
-})*/
+  transpileDependencies: true,
+  lintOnSave: false,
+})
 
-const path = require('path')
+/*const path = require('path')
 
 module.exports = {
   chainWebpack: config => {
@@ -15,4 +16,4 @@ module.exports = {
        path.resolve(__dirname, 'node_modules/vue/dist/vue.esm.js')
     )
   }
-}
+}*/

@@ -1,7 +1,11 @@
 <template>
-    <header class="d-flex align-items-center">
-    <div class="container-fluid">
-    <img src="../assets/icon-left-font.png" alt="Logo groupomania" width="20%">
+    <header class="d-flex align-items-center justify-content-around">
+    <div>
+    <img src="../assets/icon-left-font.png" alt="Logo groupomania" width="20%">    
+    </div>
+    <div>
+      <router-link to="/login">Login</router-link> |
+      <router-link to="/signup">Sign up</router-link>     
     </div>
     
    
@@ -18,6 +22,13 @@ export default {
 header {
   background-color: #2B75A6;
   min-height:100px;
+  a{
+    color: white;
+    &:hover {
+      color:red;
+      text-decoration:none;
+    }
+  }
   
 }
 </style>
