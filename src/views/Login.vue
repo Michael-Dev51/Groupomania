@@ -1,5 +1,4 @@
 <template>
-
   <div class="col-6  mx-auto ">
         <form class="col-12  bg-light p-5  ">
             <h3 class="text-center">Se connecter</h3>
