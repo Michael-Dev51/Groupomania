@@ -1,6 +1,6 @@
 <template>
-  <div class="col-6  mx-auto ">
-        <form class="col-12  bg-light p-5  ">
+  <div class="container">
+        <form class="col-6  bg-light p-4 mx-auto  ">
             <h3 class="text-center">Se connecter</h3>
             <div class="form-group">
                 <label>Adresse email</label>
