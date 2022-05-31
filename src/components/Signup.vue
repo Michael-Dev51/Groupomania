@@ -21,6 +21,10 @@
                 <input type="password" id="user_password" name="user_password" v-model="password" class="form-control form-control-lg"/>
             </div>
             <button v-on:click="seConnecter()" class="btn btn-dark btn-lg btn-block">Connexion</button>
+            <p class="forgot-password text-right">
+       Vous êtes déjà inscrit ?
+        <router-link :to="{ name: 'Login' }">Se connecter</router-link>
+      </p>
             
              
         </form>
