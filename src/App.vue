@@ -2,7 +2,7 @@
   <div id="app">
     <HeaderPage/>
     <main class="fond d-flex align-items-center">
-      <router-view @authenticated="setAuthenticated" />
+      <router-view/>
     </main>
     <FooterPage />
   </div>
@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      authenticated: false,
+      //authenticated: false,
       mockAccount: {
         email: "mikl.17@free.fr",
         password: "Mdp1234/",
@@ -28,11 +28,11 @@ export default {
     };
   },
 
-  mounted() {
+ /* mounted() {
     if (!this.authenticated) {
       this.$router.replace({ name: "Login" });
     }
-  },
+  },*/
   methods: {
     setAuthenticated(status) {
       this.authenticated = status;

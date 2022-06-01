@@ -4,12 +4,13 @@
     <form arial-label="Nouveau message" v-on:submit.prevent>
       <b-form-textarea
         id="message"
-        v-model="text"
+        v-model="msgtext"
         placeholder="Quoi de neuf ?"
         rows="3"
         no-resize
       ></b-form-textarea>
     </form>
+    <button @click="submit">envoyer</button>
   </div>
 </template>
 
@@ -18,9 +19,14 @@ export default {
   name: "NewPost",
   data() {
     return {
-      text: "",
+      msgtext: "",
     };
   },
+  methods: {
+    submit() {
+      console.log(this.msgtext)
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

@@ -32,6 +32,11 @@ const routes = [
     name: "AllPost",
     component: AllPost,
   },
+  {
+    path: "/userprofil",
+    name: "UserProfil",
+    component: () => import('../components/UserProfil.vue')
+  }
   
 ]
 
